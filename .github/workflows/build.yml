@@ -11,8 +11,7 @@ jobs:
   build:
     strategy:
       matrix:
-        # macos-13 is x86_64, and macos-14 is arm64
-        os: [ubuntu-22.04, macos-13, macos-14]
+        os: [ubuntu-22.04]
       fail-fast: false
     runs-on: ${{ matrix.os }}
     name: build.py ${{ matrix.os }}
